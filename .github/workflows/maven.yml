@@ -24,6 +24,8 @@ jobs:
 
     - name: Build with Maven
       run: mvn -B package --file project/pom.xml
+      working-directory: project
 
     - name: Run tests
       run: mvn test
+      working-directory: project
